@@ -7,7 +7,7 @@ import os
 
 
 IS_FLIPPED = False
-STYLE_PARTS = 4
+STYLE_PARTS = 5
 SKIP = True
 
 fn = open("selection.txt")

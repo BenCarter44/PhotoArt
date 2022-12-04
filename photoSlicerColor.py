@@ -7,7 +7,7 @@ import os
 
 
 IS_FLIPPED = False
-STYLE_PARTS = 4
+STYLE_PARTS = 5
 SKIP = True
 
 fn = open("selection.txt")
@@ -199,8 +199,8 @@ def colorMatch(color,colormap):
  #       adjustedValue = binSearch(weights,(grayValHigh - gray) / ((grayValHigh - grayValLow) / 2))
  #       fun = (grayValHigh - gray) / ((grayValHigh - grayValLow) / 2)
  #       txtNum = weights.index(adjustedValue)
-
-    return [txtNum,backOut,textColorOut] #,fun,grayValHigh,grayValLow,gray]
+   # print(backOut,gray,grayValLow)
+    return [txtNum,textColorOut,backOut] #,fun,grayValHigh,grayValLow,gray]
 
 
 
