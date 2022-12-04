@@ -7,7 +7,7 @@ import os
 
 
 IS_FLIPPED = False
-STYLE_PARTS = 5
+STYLE_PARTS = 4
 SKIP = True
 
 fn = open("selection.txt")
@@ -210,6 +210,12 @@ col,row = os.get_terminal_size()
 print(row)
 print(col)
 
+try:
+    f = open(FILENAME + ".json")
+    json.load(f)
+    f.close()
+except:
+    SKIP = False
 
 if(not(SKIP)):
 
