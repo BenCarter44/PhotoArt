@@ -1,5 +1,12 @@
+
 python colorMapping.py
-echo moon.jpg > selection.txt
+
+@echo off
+set /p NAME="Image Name: "
+echo %NAME% > selection.txt
+
+
+
 echo "Move screen to right size"
 pause
 python photoSlicerColorHSL.py
